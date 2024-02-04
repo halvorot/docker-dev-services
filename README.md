@@ -59,5 +59,5 @@ docker compose down -v
 
 Remember to also add the started profiles to your command, e.g. `docker compose --profile mssql down -v`
 
-:warning: Adding the `-v` flag will delete all volumes created by DevServices.
+> :warning: Adding the `-v` flag will delete all volumes created by DevServices.
 If you want to persist the data in the databases and MinIO S3 buckets, remove the `-v` flag from the command.
