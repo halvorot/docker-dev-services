@@ -207,6 +207,19 @@ services:
     profiles:
       - kafka-extended
 
+  minio:
+    image: minio/minio:latest
+    hostname: minio
+    container_name: minio
+    environment:
+      MINIO_ROOT_USER: "admin"
+      MINIO_ROOT_PASSWORD: "local-password"
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio-volume:/data
+
   oracle:
     image: gvenzl/oracle-xe:21
     ports:
@@ -229,16 +242,3 @@ services:
       MSSQL_SA_PASSWORD: "local-password"
     profiles:
       - mssql
-
-  minio:
-    image: minio/minio:latest
-    hostname: minio
-    container_name: minio
-    environment:
-      MINIO_ROOT_USER: "admin"
-      MINIO_ROOT_PASSWORD: "local-password"
-    ports:
-      - "9000:9000"
-      - "9001:9001"
-    volumes:
-      - minio-volume:/data
