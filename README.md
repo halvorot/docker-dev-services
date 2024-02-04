@@ -36,7 +36,7 @@ See [Profiles](#profiles) for information on how to run additional services.
 
 ### Profiles
 
-Default: Kafka in KRaft mode, Schema Registry, AKHQ, and MinIO S3.
+If you want to run other services in addition to the default ones, simply add the respective profile. 
 
 | Profile           | Containers                |
 |-------------------|---------------------------|
