@@ -1,0 +1,14 @@
+---
+plans:
+  low-frequency:
+    alias: "low-frequency"
+    config:
+      num.partitions: "1"
+      replication.factor: "1"
+      retention.ms: "604800000" # 7 days
+  high-frequency:
+    alias: "high-frequency"
+    config:
+      num.partitions: "5"
+      replication.factor: "1"
+      retention.ms: "432000000" # 5 days
