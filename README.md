@@ -1,6 +1,8 @@
 # DevServices
 
-This is derived from the [Confluent cp-all-in-one](https://github.com/confluentinc/cp-all-in-one) repository.
+> This is derived from the [Confluent cp-all-in-one](https://github.com/confluentinc/cp-all-in-one) repository.
+
+DevServices is a Docker compose project for quick local setup of local development services such as Kafka, AKHQ, MinIO S3, and various databases.
 
 *Services:*
 
