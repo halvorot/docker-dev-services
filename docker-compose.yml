@@ -218,6 +218,7 @@ services:
       - "9001:9001"
     volumes:
       - minio-volume:/data
+    command: server /data --console-address ":9001"
 
   oracle:
     image: gvenzl/oracle-xe:21
