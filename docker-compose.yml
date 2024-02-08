@@ -78,14 +78,14 @@ services:
     image: purbon/kafka-topology-builder:4.4.1
     hostname: ktb
     container_name: ktb
+    platform: linux/x86_64
     command:
       - /bin/sh
       - -c
       - >
-        ktb.sh
+        kafka-topology-builder.sh
         --brokers broker:29092
         --clientConfig /ktb/adminclient.conf
-        --plans /ktb/plans.yml
         --topology /ktb/topology.yml
     volumes:
       - type: bind

@@ -61,8 +61,5 @@ projects:
             - "topicF"
     topics:
       - name: "topicE"
-        plan: "low-frequency"
         config:
           message.timestamp.type: LogAppendTime
-      - name: "topicF"
-        plan: "high-frequency"
