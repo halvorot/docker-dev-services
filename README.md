@@ -1,6 +1,6 @@
 # DevServices
 
-:warning: ONLY *broker*, *schema-registry*, and *akhq* is tested and working :warning:
+:warning: ONLY *broker*, *schema-registry*, *akhq*, and *minio* is tested and working :warning:
 :warning: KTB not working :warning:
 
 > This is derived from the [Confluent cp-all-in-one](https://github.com/confluentinc/cp-all-in-one) repository.
