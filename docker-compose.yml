@@ -83,7 +83,7 @@ services:
       - /bin/sh
       - -c
       - >
-        kafka-topology-builder.sh
+        julie-ops-cli.sh
         --brokers broker:29092
         --clientConfig /ktb/adminclient.conf
         --topology /ktb/topology.yml

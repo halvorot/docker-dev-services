@@ -1,65 +1,15 @@
 ---
-# This file is an example based on https://github.com/kafka-ops/kafka-topology-builder-demo
-context: "myOrganization"
+context: "oltp"
 projects:
-  - name: "foo"
+  - name: "my_project"
     consumers:
-      - principal: "User:632938"
-        group: "foo"
-      - principal: "User:632940"
-    producers:
-      - principal: "User:632938"
-      - principal: "User:832940"
-        transactionId: "1234"
-      - principal: "User:832940"
-        idempotence: "true"
-    streams:
-      - principal: "User:632938"
-        topics:
-          read:
-            - "topicA"
-            - "topicB"
-          write:
-            - "topicC"
-            - "topicD"
-    connectors:
-      - principal: "User:832967"
-        cluster_id: "foo"
-        group: "group"
-        status_topic: "status"
-        offset_topic: "offset"
-        configs_topic: "configs"
-        topics:
-          read:
-            - "topicA"
-            - "topicB"
-      - principal: "User:832968"
-        topics:
-          write:
-            - "topicC"
-            - "topicD"
+      - principal: "User:NewApp2"
     topics:
-      - name: "foobar"
-        config:
-          replication.factor: "3"
-          num.partitions: "12"
-  - name: "bar"
+      - name: "foo"
+      - name: "bar"
+        dataType: "avro"
+      - name: "zet"
+        dataType: "json"
+  - name: "my_project_2"
     topics:
-      - dataType: "avro"
-        name: "bar"
-        config:
-          replication.factor: "3"
-          num.partitions: "12"
-  - name: "baz"
-    streams:
-      - principal: "User:632940"
-        applicationId: "applicationId-1"
-        topics:
-          read:
-            - "topicE"
-          write:
-            - "topicF"
-    topics:
-      - name: "topicE"
-        config:
-          message.timestamp.type: LogAppendTime
+      - name: "my_topic"
