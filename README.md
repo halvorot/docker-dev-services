@@ -14,9 +14,9 @@ DevServices is a Docker compose project for quick local setup of local developme
 - ksqlDB Server
 - ksql Datagen
 - Kafka REST Proxy
+- MinIO S3 bucket storage
 - Oracle Database
 - MSSQL Database
-- MinIO S3 bucket storage
 
 ## Usage
 
@@ -59,7 +59,57 @@ docker compose --profile mssql up -d
 docker compose down -v
 ```
 
-Remember to also add the started profiles to your command, e.g. `docker compose --profile mssql down -v`
+Remember to also add the profiles used in the `up` command to your `down` command, e.g. `docker compose --profile mssql down -v`
 
 > :warning: Adding the `-v` flag will delete all volumes created by DevServices.
 If you want to persist the data in the databases and MinIO S3 buckets, remove the `-v` flag from the command.
+
+## Services
+
+### Kafka in KRaft mode
+
+Bootstrap server: `localhost:9092`
+
+### Schema Registry
+
+Schema registry URL: `http://localhost:8081`
+
+### AKHQ
+
+URL: `locahost:8084`
+
+### Kafka Topology Builder / JulieOps
+
+The topology file is located in `ktb/topology.yml`. Change it to match your desired topology.
+
+### Kafka Connect
+
+### ksqlDB Server
+
+### ksql Datagen
+
+### Kafka REST Proxy
+
+### MinIO S3 bucket storage
+
+Username: `local-user`
+
+Password: `local-password`
+
+> Feel free to change these in the `docker-compose.yml` file.
+
+### Oracle Database
+
+Username: `local-user`
+
+Password: `local-password`
+
+> Feel free to change these in the `docker-compose.yml` file.
+
+### MSSQL Database
+
+Username: `sa`
+
+Password: `local-password`
+
+> Feel free to change these in the `docker-compose.yml` file.

@@ -211,7 +211,7 @@ services:
     hostname: minio
     container_name: minio
     environment:
-      MINIO_ROOT_USER: "admin"
+      MINIO_ROOT_USER: "local-user"
       MINIO_ROOT_PASSWORD: "local-password"
     ports:
       - "9000:9000"
@@ -226,7 +226,7 @@ services:
       - "1521:1521"
     environment:
       ORACLE_PASSWORD: local
-      APP_USER: sa
+      APP_USER: local-user
       APP_USER_PASSWORD: local-password
     volumes:
       - oracle-volume:/opt/oracle/oradata
