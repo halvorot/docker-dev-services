@@ -22,7 +22,7 @@ DevServices is a Docker compose project for quick local setup of local developme
 
 ### Running DevServices
 
-```
+```bash
 docker compose up -d
 ```
 
@@ -38,7 +38,7 @@ See [Profiles](#profiles) for information on how to run additional services.
 
 ### Profiles
 
-If you want to run other services in addition to the default ones, simply add the respective profile. 
+If you want to run other services in addition to the default ones, simply add the respective profile.
 
 | Profile           | Containers                |
 |-------------------|---------------------------|
@@ -49,13 +49,13 @@ If you want to run other services in addition to the default ones, simply add th
 
 Example:
 
-```
+```bash
 docker compose --profile mssql up -d
 ```
 
 ### Stopping DevServices
 
-```
+```bash
 docker compose down -v
 ```
 
