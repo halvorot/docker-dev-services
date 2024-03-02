@@ -118,6 +118,6 @@ Password: `local-password`
 
 Username: `sa`
 
-Password: `local-password`
+Password: `local-password123`
 
 > Feel free to change these in the `docker-compose.yml` file.
