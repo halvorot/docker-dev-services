@@ -1,4 +1,4 @@
-# DevServices
+# Docker DevServices
 
 > This is derived from the [Confluent cp-all-in-one](https://github.com/confluentinc/cp-all-in-one) repository.
 
