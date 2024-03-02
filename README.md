@@ -22,7 +22,7 @@ DevServices is a Docker compose project for quick local setup of local developme
 
 ### Running DevServices
 
-```
+```bash
 docker compose up -d
 ```
 
@@ -34,7 +34,6 @@ See [Profiles](#profiles) for information on how to run additional services.
 - Kafka in KRaft mode
 - Schema Registry
 - AKHQ
-- MinIO S3 bucket storage
 
 ### Profiles
 
@@ -44,18 +43,25 @@ If you want to run other services in addition to the default ones, simply add th
 |-------------------|---------------------------|
 | ktb               | Kafka Topology Builder    |
 | kafka-extended    | Additional Kafka Services |
+| s3                | MinIO S3 bucket storage   |
 | oracle            | Oracle Database           |
 | mssql             | MSSQL Database            |
 
 Example:
 
-```
+```bash
 docker compose --profile mssql up -d
+```
+
+To run multiple profiles use multiple `--profile` flags:
+
+```bash
+docker compose --profile s3 --profile mssql up -d
 ```
 
 ### Stopping DevServices
 
-```
+```bash
 docker compose down -v
 ```
 
@@ -80,7 +86,9 @@ URL: `locahost:8084`
 
 ### Kafka Topology Builder / JulieOps
 
-The topology file is located in `ktb/topology.yml`. Change it to match your desired topology.
+The topology file is located in `ktb/topology.yml`. 
+
+> Feel free to change it to match your desired topology.
 
 ### Kafka Connect
 

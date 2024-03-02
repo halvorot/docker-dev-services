@@ -219,6 +219,8 @@ services:
     volumes:
       - minio-volume:/data
     command: server /data --console-address ":9001"
+    profiles:
+      - s3
 
   oracle:
     image: gvenzl/oracle-xe:21
