@@ -8,7 +8,7 @@ volumes:
 services:
 
   broker:
-    image: confluentinc/cp-kafka:7.5.0
+    image: confluentinc/cp-kafka:7.6.0
     hostname: broker
     container_name: broker
     ports:
@@ -37,7 +37,7 @@ services:
 
 
   schema-registry:
-    image: confluentinc/cp-schema-registry:7.5.0
+    image: confluentinc/cp-schema-registry:7.6.0
     hostname: schema-registry
     container_name: schema-registry
     depends_on:
@@ -129,7 +129,7 @@ services:
       - kafka-extended
 
   ksqldb-server:
-    image: confluentinc/cp-ksqldb-server:7.5.0
+    image: confluentinc/cp-ksqldb-server:7.6.0
     hostname: ksqldb-server
     container_name: ksqldb-server
     depends_on:
@@ -154,7 +154,7 @@ services:
       - kafka-extended
 
   ksqldb-cli:
-    image: confluentinc/cp-ksqldb-cli:7.5.0
+    image: confluentinc/cp-ksqldb-cli:7.6.0
     container_name: ksqldb-cli
     depends_on:
       - broker
@@ -166,7 +166,7 @@ services:
       - kafka-extended
 
   ksql-datagen:
-    image: confluentinc/ksqldb-examples:7.5.0
+    image: confluentinc/ksqldb-examples:7.6.0
     hostname: ksql-datagen
     container_name: ksql-datagen
     depends_on:
@@ -190,7 +190,7 @@ services:
       - kafka-extended
 
   rest-proxy:
-    image: confluentinc/cp-kafka-rest:7.5.0
+    image: confluentinc/cp-kafka-rest:7.6.0
     depends_on:
       - broker
       - schema-registry

@@ -37,7 +37,7 @@ See [Profiles](#profiles) for information on how to run additional services.
 
 ### Profiles
 
-If you want to run other services in addition to the default ones, simply add the respective profile. 
+If you want to run other services in addition to the default ones, simply add the respective profile.
 
 | Profile           | Containers                |
 |-------------------|---------------------------|
