@@ -44,7 +44,7 @@ If you want to run other services in addition to the default ones, simply add th
 | ktb               | Kafka Topology Builder    |
 | kafka-extended    | Additional Kafka Services |
 | s3                | MinIO S3 bucket storage   |
-| postgres          | Postgres Database           |
+| postgres          | Postgres Database         |
 | mssql             | MSSQL Database            |
 
 Example:
