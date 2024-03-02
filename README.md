@@ -15,7 +15,7 @@ DevServices is a Docker compose project for quick local setup of local developme
 - ksql Datagen
 - Kafka REST Proxy
 - MinIO S3 bucket storage
-- Oracle Database
+- Postgres Database
 - MSSQL Database
 
 ## Usage
@@ -44,7 +44,7 @@ If you want to run other services in addition to the default ones, simply add th
 | ktb               | Kafka Topology Builder    |
 | kafka-extended    | Additional Kafka Services |
 | s3                | MinIO S3 bucket storage   |
-| oracle            | Oracle Database           |
+| postgres          | Postgres Database           |
 | mssql             | MSSQL Database            |
 
 Example:
@@ -106,9 +106,9 @@ Password: `local-password`
 
 > Feel free to change these in the `docker-compose.yml` file.
 
-### Oracle Database
+### Postgres Database
 
-Username: `local-user`
+Username: `postgres`
 
 Password: `local-password`
 

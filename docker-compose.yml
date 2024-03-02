@@ -2,7 +2,6 @@
 version: '2'
 
 volumes:
-  oracle-volume:
   minio-volume:
 
 services:
@@ -221,18 +220,13 @@ services:
     profiles:
       - s3
 
-  oracle:
-    image: gvenzl/oracle-xe:21
+  postgres:
+    image: postgres:16.2
+    container_name: postgres
     ports:
-      - "1521:1521"
+      - "5432:5432"
     environment:
-      ORACLE_PASSWORD: local
-      APP_USER: local-user
-      APP_USER_PASSWORD: local-password
-    volumes:
-      - oracle-volume:/opt/oracle/oradata
-    profiles:
-      - oracle
+      POSTGRES_PASSWORD: local-password
   
   mssql:
     image: mcr.microsoft.com/mssql/server:2022-latest
