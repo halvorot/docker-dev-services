@@ -86,7 +86,7 @@ URL: `locahost:8084`
 
 ### Kafka Topology Builder / JulieOps
 
-The topology file is located in `ktb/topology.yml`. 
+The topology file is located in `ktb/topology.yml`.
 
 > Feel free to change it to match your desired topology.
 
