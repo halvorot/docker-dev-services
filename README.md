@@ -10,13 +10,15 @@ DevServices is a Docker compose project for quick local setup of local developme
 - Schema Registry
 - AKHQ
 - Kafka Topology Builder / JulieOps
-- Kafka Connect
-- ksqlDB Server
-- ksql Datagen
-- Kafka REST Proxy
+- Kafka Connect*
+- ksqlDB Server*
+- ksql Datagen*
+- Kafka REST Proxy*
 - MinIO S3 bucket storage
 - Postgres Database
 - MSSQL Database
+
+*Not tested
 
 ## Usage
 
