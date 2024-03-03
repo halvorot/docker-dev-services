@@ -102,6 +102,8 @@ The topology file is located in `ktb/topology.yml`.
 
 ### MinIO S3 bucket storage
 
+URL: `localhost:9000`
+
 Username: `local-user`
 
 Password: `local-password`
@@ -110,6 +112,8 @@ Password: `local-password`
 
 ### Postgres Database
 
+URL: `localhost:5432`
+
 Username: `postgres`
 
 Password: `local-password`
@@ -117,6 +121,8 @@ Password: `local-password`
 > Feel free to change these in the `docker-compose.yml` file.
 
 ### MSSQL Database
+
+URL: `localhost:1433`
 
 Username: `sa`
 
