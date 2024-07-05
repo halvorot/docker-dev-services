@@ -49,7 +49,7 @@ services:
       SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8081
 
   akhq:
-    image: tchiotludo/akhq:0.25.0
+    image: tchiotludo/akhq:0.25.1
     hostname: akhq
     container_name: akhq
     environment:
