@@ -152,7 +152,7 @@ services:
       - kafka-extended
 
   ksqldb-cli:
-    image: confluentinc/cp-ksqldb-cli:7.6.1
+    image: confluentinc/cp-ksqldb-cli:7.6.2
     container_name: ksqldb-cli
     depends_on:
       - broker
