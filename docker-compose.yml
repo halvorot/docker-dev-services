@@ -164,7 +164,7 @@ services:
       - kafka-extended
 
   ksql-datagen:
-    image: confluentinc/ksqldb-examples:7.7.0
+    image: confluentinc/ksqldb-examples:7.7.1
     hostname: ksql-datagen
     container_name: ksql-datagen
     depends_on:
