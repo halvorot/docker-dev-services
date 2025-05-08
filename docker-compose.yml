@@ -188,7 +188,7 @@ services:
       - kafka-extended
 
   rest-proxy:
-    image: confluentinc/cp-kafka-rest:7.9.0
+    image: confluentinc/cp-kafka-rest:7.9.1
     depends_on:
       - broker
       - schema-registry
