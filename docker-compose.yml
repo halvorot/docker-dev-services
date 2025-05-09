@@ -221,7 +221,7 @@ services:
       - s3
 
   postgres:
-    image: postgres:17.4
+    image: postgres:17.5
     container_name: postgres
     ports:
       - "5432:5432"
