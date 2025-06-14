@@ -127,7 +127,7 @@ services:
       - kafka-extended
 
   ksqldb-server:
-    image: confluentinc/cp-ksqldb-server:7.9.1
+    image: confluentinc/cp-ksqldb-server:7.9.2
     hostname: ksqldb-server
     container_name: ksqldb-server
     depends_on:
